@@ -1,8 +1,14 @@
-.Chat {
-  position: relative;
-  display: grid;
-  grid-template-columns: 22% auto;
-  gap: 1rem;
+@media screen and (min-width: 1010px) {
+  .Chat {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+  }
+
+  .Chat-container {
+    min-height: 80vh;
+  }
 }
 
 .Left-side-chat {
@@ -18,8 +24,8 @@
   background: var(--cardColor);
   border-radius: 1rem;
   padding: 1rem;
+  padding-bottom: 2rem;
   height: auto;
-  min-height: 80vh;
   overflow: scroll;
 }
 

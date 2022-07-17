@@ -21,8 +21,18 @@
 .PostShare > div {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .PostShare > div {
+    width: 60%;
+  }
+  .PostShare-input {
+    width: 60vw;
+    /* display: flex; */
+  }
 }
 
 .PostShare > div > input {

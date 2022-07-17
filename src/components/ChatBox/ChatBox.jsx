@@ -74,10 +74,7 @@ const ChatBox = ({ chat, currentUser, setSendMessage, receiveMessage }) => {
 
   return (
     <>
-      <div
-        className="ChatBox-container"
-        style={{ position: "relative", top: "-10px" }}
-      >
+      <div className="ChatBox-container">
         {chat ? (
           <>
             <div className="chat-header">

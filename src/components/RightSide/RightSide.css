@@ -4,27 +4,50 @@
   gap: 2rem;
 }
 
-.navIcons {
+.navIcons,
+.navIcons-chat {
   display: flex;
   justify-content: space-between;
   background-color: var(--cardColor);
   padding: 1rem 1.5rem 0;
   border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.navIcons-chat {
+  margin-top: 0;
+  padding-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 1010px) {
+  .navIcons-chat {
+    margin-top: 2rem;
+  }
 }
 
 .navIcons > img,
-.navIcons > a > img {
+.navIcons > a > img,
+.navIcons-chat > img,
+.navIcons-chat > a > img {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-.log-out-icon {
+.log-out-icon,
+.log-out-icon-chat {
   padding-bottom: 1rem;
   justify-content: flex-end;
   cursor: pointer;
 }
 
-.log-out-icon > h4 {
+.log-out-icon-chat {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.log-out-icon > h4,
+.log-out-icon-chat > h4 {
   margin: 0 1rem;
   color: var(--orange);
 }

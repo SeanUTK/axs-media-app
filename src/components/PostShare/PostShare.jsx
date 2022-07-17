@@ -24,8 +24,6 @@ const PostShare = ({ location }) => {
   const desc = useRef();
   const { user } = useSelector((state) => state.authReducer.authData);
 
-  // console.log(user);
-
   const loading = useSelector((state) => state.postReducer.uploading);
 
   const onImageChange = (e) => {
@@ -103,6 +101,7 @@ const PostShare = ({ location }) => {
           />
           <div>
             <input
+              className="PostShare-input"
               ref={desc}
               required
               type="text"
@@ -124,10 +123,6 @@ const PostShare = ({ location }) => {
               <div className="option" style={{ color: "var(--location)" }}>
                 <UilLocationPoint />
                 Location
-              </div>
-              <div className="option" style={{ color: "var(--schedule)" }}>
-                <UilSchedule />
-                Schedule
               </div>
               <button
                 className="button ps-button"
