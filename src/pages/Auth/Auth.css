@@ -1,0 +1,183 @@
+.Auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  gap: 4rem;
+  position: relative;
+}
+
+.Auth > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-left {
+  gap: 2rem;
+}
+
+.a-left > img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.Webname > h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  background-color: red;
+  background-image: var(--buttonBg);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.Webname > h6 {
+  font-size: 0.85rem;
+}
+
+.infoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.infoInput {
+  border: none;
+  outline: none;
+  background-color: var(--inputColor);
+  border-radius: 5px;
+  padding: 20px;
+  flex: 1;
+}
+
+.infoForm > div {
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+}
+
+.infoButton {
+  width: 6rem;
+  height: 50px;
+  align-items: center;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.infoButton2 {
+  width: 6rem;
+  height: 50px;
+  align-items: center;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: var(--yellow) !important;
+  margin-bottom: 1rem;
+  color: #fff !important;
+  border-color: var(--yellow) !important;
+}
+
+.authForm {
+  background-color: var(--cardColor);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.authForm > div {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up-hr {
+  position: relative;
+  width: 44%;
+  border-style: none;
+  border-top: 1px solid gray;
+}
+
+.log-in-hr {
+  position: relative;
+  width: 40%;
+  border-style: none;
+  border-top: 1px solid gray;
+}
+
+.or {
+  position: relative;
+  color: gray;
+}
+
+.auth-divider {
+  position: relative;
+  top: -5px;
+}
+
+.copyright {
+  color: gray;
+  position: relative;
+  bottom: -1%;
+  text-align: center;
+  right: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+  .Auth {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .Auth {
+    top: -70px;
+  }
+
+  .a-left > img {
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    top: 15px;
+  }
+
+  .Webname > h1 {
+    font-size: 2rem;
+    position: relative;
+    top: 30px;
+  }
+
+  .Webname > h6 {
+    font-size: 14px;
+    display: none;
+  }
+
+  .infoForm {
+    width: 80%;
+  }
+
+  .infoInput {
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Auth {
+    top: 0px;
+  }
+
+  .infoForm {
+    position: relative;
+    top: -10%;
+  }
+}

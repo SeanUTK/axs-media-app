@@ -1,0 +1,26 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.Post > img {
+  width: 100%;
+  max-height: 40rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.PostInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.postUserInfo {
+  display: flex;
+  flex-direction: column;
+}
